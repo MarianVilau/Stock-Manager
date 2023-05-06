@@ -94,7 +94,6 @@ if ($session->isUserLoggedIn(true)): ?>
                 </div>
             </li>
         </ul>
-        </div>
     </nav>
 
     <script src="js/script_template.js"></script>

@@ -8,8 +8,6 @@
 
     <link rel="stylesheet" href="css/style_template.css">
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/css/datepicker3.min.css">
 
     <title><?php if (!empty($page_title))
             echo remove_junk($page_title);
@@ -18,45 +16,7 @@
         else echo "Stock Management System"; ?></title>
 </head>
 <body>
-<?php /** @var TYPE_NAME $session */
-if ($session->isUserLoggedIn(true)): ?>
-
-
-    <header id="header" class="content">
-        <div class="header-content">
-            <div class="pull-right clearfix">
-                <ul class="info-menu list-inline list-unstyled">
-                    <li class="profile">
-                        <a href="#" data-toggle="dropdown" class="toggle" aria-expanded="false">
-                            <img src="uploads/users/<?php echo $user['image']; ?>" alt="user-image"
-                                 class="img-circle img-inline">
-                            <span><?php echo remove_junk(ucfirst($user['name'])); ?> <i class="caret"></i></span>
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li>
-                                <a href="profile.php?id=<?php echo (int)$user['id']; ?>">
-                                    <i class="glyphicon glyphicon-user"></i>
-                                    Profile
-                                </a>
-                            </li>
-                            <li>
-                                <a href="edit_account.php" title="edit account">
-                                    <i class="glyphicon glyphicon-cog"></i>
-                                    Settings
-                                </a>
-                            </li>
-                            <li class="last">
-                                <a href="logout.php">
-                                    <i class="glyphicon glyphicon-off"></i>
-                                    Logout
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </header>
+<?php if ($session->isUserLoggedIn(true)): ?>
 
     <nav>
         <div class="logo-name">
@@ -92,11 +52,24 @@ if ($session->isUserLoggedIn(true)): ?>
                 </div>
             </li>
         </ul>
-        </div>
+
     </nav>
 
-    <script src="js/script_template.js"></script>
+    <div class="content">
+        <div class="top">
+            <i class="uil uil-bars sidebar-toggle"></i>
 
+            <div class="search-box">
+                <i class="uil uil-search"></i>
+                <label>
+                    <input type="text" placeholder="Search here...">
+                </label>
+            </div>
+
+            <!--<img src="images/profile.jpg" alt="">-->
+        </div>
+    </div>
+    <script src="js/script_template.js"></script>
 
 <?php endif; ?>
 
