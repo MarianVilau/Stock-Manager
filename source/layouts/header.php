@@ -11,19 +11,19 @@
 
         <ul class="nav-links">
 
-            <?php if ($user['user_level'] === '1'): ?>
-                <!-- admin menu -->
-                <?php include_once('layouts/admin_menu.php'); ?>
+            <!--?php if ($user['user_level'] === '1'): ?>
+                 admin menu -->
+                <?php include_once("admin_menu.php"); ?>
+            <!--
+            ?php elseif ($user['user_level'] === '2'): ?>
+                !-- Special user
+                ?php include_once('layouts/admin_menu.php'); ?>
 
-            <?php elseif ($user['user_level'] === '2'): ?>
-                <!-- Special user -->
-                <?php include_once('layouts/admin_menu.php'); ?>
+            ?php elseif ($user['user_level'] === '3'): ?>
+                !-- User menu
+                ?php include_once('layouts/admin_menu.php'); ?-->
 
-            <?php elseif ($user['user_level'] === '3'): ?>
-                <!-- User menu -->
-                <?php include_once('layouts/admin_menu.php'); ?>
-
-            <?php endif; ?>
+            <!--?php endif; ?-->
         </ul>
         <ul class="footer-links">
             <li class="mode">
@@ -43,9 +43,27 @@
     <div class="top">
         <i class="uil uil-bars sidebar-toggle"></i>
 
-
-        <!--<img src="images/profile.jpg" alt="">-->
+        <div class="action">
+            <div class="profile" onclick="menuToggle();">
+                <img src="profile.png">
+            </div>
+            <div class="menu_login">
+                <ul>
+                    <li>
+                        <i class="uil uil-user"></i>
+                        <a href="#">My Profile</a>
+                    </li>
+                    <li>
+                        <i class="uil uil-setting"></i>
+                        <a href="#">Settings</a>
+                    </li>
+                    <li>
+                        <i class="uil uil-signout"></i>
+                        <a href="#">Logout</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </div>
-
 
 
