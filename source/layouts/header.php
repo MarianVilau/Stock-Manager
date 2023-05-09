@@ -1,7 +1,7 @@
 <nav>
     <div class="logo-name">
         <div class="logo-image">
-            <img src="../images/M&M_logo.png" alt="logo M&M">
+            <img src="images/M&M_logo.png" alt="logo M&M">
         </div>
 
         <span class="logo_name">M&M Store</span>
@@ -45,7 +45,7 @@
 
         <div class="action">
             <div class="profile" onclick="menuToggle();">
-                <img src="profile.png">
+                <img src="images/profile.png">
             </div>
             <div class="menu_login">
                 <ul>
@@ -65,5 +65,12 @@
             </div>
         </div>
     </div>
+
+    <script>
+        function menuToggle(){
+            const toggleMenu=document.querySelector('.menu_login');
+            toggleMenu.classList.toggle('active');
+        }
+    </script>
 
 

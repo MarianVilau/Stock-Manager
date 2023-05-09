@@ -30,3 +30,8 @@ sidebarToggle.addEventListener("click",()=>{
         localStorage.setItem("status", "open");
     }
 });
+
+function menuToggle(){
+    const toggleMenu=document.querySelector('.menu_login');
+    toggleMenu.classList.toggle('active');
+}
