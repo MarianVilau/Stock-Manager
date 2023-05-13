@@ -706,3 +706,16 @@ nav.close ~ .content .top{
 .action .menu_login ul li:hover a{
     color:#ff5d94;
 }
+
+/*---------------footer admin--------- */
+.login__copyright2 {
+
+    display: block;
+    margin-top: 3rem;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 0.75rem;
+    text-decoration: none;
+    position: relative;
+    z-index: 1;
+}

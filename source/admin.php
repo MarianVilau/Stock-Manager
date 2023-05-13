@@ -17,7 +17,8 @@ require_once("includes/load.php");
         <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
         <title>M&M Store</title>
     </head>
-<body>
+    <body>
+<div>
 <?php require_once('layouts/header.php') ?>
 
     <div class="dash-content">
@@ -181,5 +182,11 @@ require_once("includes/load.php");
         <script src="script.js"></script>
     </div>
 
+    <footer>
+        <br>
+
+        <p class="login__copyright2">Copyright 2023 &copy; Marian&MihaelaTeam</p>
+
+    </footer>
 
 <?php require_once('layouts/footer.php') ?>
