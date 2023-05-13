@@ -38,6 +38,7 @@
     background-color: var(--btn-color);
 }
 
+
 .text-sm {
     font-size: .875rem
 }
@@ -104,7 +105,6 @@
 
 .alt-color {
     --bg-opacity: 1;
-    background-color: #1a1c23;
     background-color: var(--head-color);
 }
 
@@ -223,6 +223,10 @@
 }
 .pull-right{
     float: right !important;
+}
+
+.in-line{
+    display: inline-block;
 }
 
 .items-center {

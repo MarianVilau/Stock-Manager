@@ -1,5 +1,4 @@
-/* ===== Google Font Import - Poppins ===== */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -704,5 +703,16 @@ nav.close ~ .content .top{
 
 }
 .action .menu_login ul li:hover a{
-    color:#ff5d94;
+    color:var(--item-color);
+}
+
+@media print{
+    body *:not(#my-section):not(#my-section *){
+        visibility: hidden;
+    }
+    #my-section{
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
 }
