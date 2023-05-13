@@ -1,4 +1,5 @@
-
+/* ===== Google Font Import - Poppins ===== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -715,4 +716,18 @@ nav.close ~ .content .top{
         top: 0;
         left: 0;
     }
+}
+
+
+/*---------------footer admin--------- */
+.login__copyright2 {
+
+    display: block;
+    margin-top: 3rem;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 0.75rem;
+    text-decoration: none;
+    position: relative;
+    z-index: 1;
 }
