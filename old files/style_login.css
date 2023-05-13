@@ -23,6 +23,10 @@ body {
     background-image: url("../../InventorySystem_PHP2/libs/images/background.png");
     box-shadow: 0 50px 70px -20px #767676;
 }
+.logo_namee{
+    width:30%;
+    height:auto;
+}
 
 .login-container:after {
     content: '';
@@ -33,7 +37,7 @@ body {
     right: 0;
     bottom: 0;
     left: 0;
-    background-image: radial-gradient(ellipse at left bottom, rgba(22, 24, 47, 1) 0%,rgba(38, 20, 72, .9) 59%, rgba(17, 27, 75, .9) 100%);
+    background-image: radial-gradient(ellipse at left bottom, rgba(22, 24, 47, 1) 0%,#00A699 59%, rgba(17, 27, 75, .9) 100%);
     box-shadow: 0 -20px 150px -20px rgba(0, 0, 0, 0.5);
 }
 
@@ -48,18 +52,22 @@ body {
     position: relative;
     padding: 0;
     margin: 0 0 6em 1rem;
+    display: flex;
+    justify-content: space-between; /* Așază elementele la marginea stângă și dreaptă a containerului */
+    align-items: center;
 }
 
 .login-nav__item {
     list-style: none;
     display: inline-block;
+    text-decoration:none;
 }
 
 .login-nav__item + .login-nav__item {
     margin-left: 2.25rem;
 }
 
-.login-nav__item a {
+.login-nav__item  {
     position: relative;
     color: rgba(255, 255, 255, 0.5);
     text-decoration: none;
@@ -91,7 +99,7 @@ body {
 
 .login-nav__item a:hover:after,
 .login-nav__item.active a:after{
-    background-color: rgb(17, 97, 237);
+    background-color: rgba(255, 90, 95, 0.84);
     height: 2px;
     right: 0;
     bottom: 2px;
@@ -162,13 +170,14 @@ body {
     border-radius: 2rem;
     display: block;
     width: 100%;
-    background-color: rgba(17, 97, 237, .75);
+    background-color: #FF5A5F;
     border: none;
     cursor: pointer;
+
 }
 
 .login__submit:hover {
-    background-color: rgba(17, 97, 237, 1);
+    background-color: rgba(255, 90, 95, 0.78);
 }
 
 .login__copyright {
@@ -180,4 +189,18 @@ body {
     text-decoration: none;
     position: relative;
     z-index: 1;
+}
+
+/*----------------------*/
+.logo-image{
+    display: flex;
+    justify-content: center;
+    min-width: 0px;
+}
+.logo-name .logo_name{
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--text-color);
+    margin-left: 14px;
+    transition: var(--tran-05);
 }

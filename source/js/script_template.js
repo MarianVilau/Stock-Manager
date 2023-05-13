@@ -31,7 +31,3 @@ sidebarToggle.addEventListener("click",()=>{
     }
 });
 
-function menuToggle(){
-    const toggleMenu=document.querySelector('.menu_login');
-    toggleMenu.classList.toggle('active');
-}

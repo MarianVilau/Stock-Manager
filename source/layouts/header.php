@@ -59,7 +59,7 @@
                     </li>
                     <li>
                         <i class="uil uil-signout"></i>
-                        <a href="#">Logout</a>
+                        <a href="..\old files\login.html">Logout</a>
                     </li>
                 </ul>
             </div>
