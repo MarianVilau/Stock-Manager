@@ -725,10 +725,18 @@ a:-webkit-any-link {
 }
 
 .login__copyright2 {
+
     padding: 0.812rem;
     font-size: 0.875rem !important;
     text-align: center;
     border-top: 1px solid var(--text-color);
     color: var(--text-color);
     display: block;
+}
+.element {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100px;
+    height: 100px;
 }

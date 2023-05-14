@@ -51,5 +51,6 @@ $c_user = count_by_id('users');
         </div>
     </div>
 </div>
+<div class="element"></div>
 
 <?php include_once('layouts/footer.php'); ?>

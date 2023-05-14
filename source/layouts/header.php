@@ -51,6 +51,11 @@
                     <span class="switch"></span>
                 </div>
             </li>
+            <li>
+                <a href="#">
+                <span class="link_name">Copyright 2023 &copy; M&MTeam</span>
+                </a>
+            </li>
         </ul>
     </div>
 </nav>
