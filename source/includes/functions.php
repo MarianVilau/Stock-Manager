@@ -40,7 +40,7 @@ function validate_fields($var){
   }
 }
 /*--------------------------------------------------------------*/
-/* Function for Display Session Message
+/* Function for Display session Message
    Ex echo displayt_msg($message);
 /*--------------------------------------------------------------*/
 function display_msg($msg =''){

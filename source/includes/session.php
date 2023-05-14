@@ -1,7 +1,7 @@
 <?php
  session_start();
 
-class Session {
+class session {
 
  public $msg;
  private $user_is_logged_in = false;
@@ -53,7 +53,7 @@ class Session {
   }
 }
 
-$session = new Session();
+$session = new session();
 $msg = $session->msg();
 
 ?>
