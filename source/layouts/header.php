@@ -15,6 +15,7 @@
     <title>M&M Store</title>
 </head>
 <body>
+<?php  if ($session->isUserLoggedIn(true)): ?>
 <nav>
     <div class="logo-name">
         <div class="logo-image">
@@ -32,10 +33,10 @@
                 <?php include_once("admin_menu.php"); ?>
 
             <?php elseif ($user['user_level'] === '2'): ?>
-                <?php include_once('layouts/admin_menu.php'); ?>
+                <?php include_once('special_menu.php'); ?>
 
             <?php elseif ($user['user_level'] === '3'): ?>
-                <?php include_once('layouts/admin_menu.php'); ?>
+                <?php include_once('user_menu.php'); ?>
 
             <?php endif; ?>
         </ul>
@@ -86,3 +87,5 @@
             toggleMenu.classList.toggle('active');
         }
     </script>
+    <?php endif;?>
+
