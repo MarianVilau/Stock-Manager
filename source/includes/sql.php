@@ -219,30 +219,6 @@ function tableExists($table){
     return find_by_sql($sql);
 
    }
-  /*--------------------------------------------------------------*/
-  /* Function for Finding all product name
-  /* Request coming from ajax.php for auto suggest
-  /*--------------------------------------------------------------*/
-
-   function find_product_by_title($product_name){
-     global $db;
-     $p_name = remove_junk($db->escape($product_name));
-     $sql = "SELECT name FROM products WHERE name like '%$p_name%' LIMIT 5";
-     $result = find_by_sql($sql);
-     return $result;
-   }
-
-  /*--------------------------------------------------------------*/
-  /* Function for Finding all product info by product title
-  /* Request coming from ajax.php
-  /*--------------------------------------------------------------*/
-  function find_all_product_info_by_title($title){
-    global $db;
-    $sql  = "SELECT * FROM products ";
-    $sql .= " WHERE name ='{$title}'";
-    $sql .=" LIMIT 1";
-    return find_by_sql($sql);
-  }
 
   /*--------------------------------------------------------------*/
   /* Function for Update product quantity
@@ -321,34 +297,21 @@ function find_sale_by_dates($start_date,$end_date){
   $sql .= " ORDER BY DATE(s.date) DESC";
   return $db->query($sql);
 }
-/*--------------------------------------------------------------*/
-/* Function for Generate Daily sales report
-/*--------------------------------------------------------------*/
-function  dailySales($year,$month){
-  global $db;
-  $sql  = "SELECT s.qty,";
-  $sql .= " DATE_FORMAT(s.date, '%Y-%m-%e') AS date,p.name,";
-  $sql .= "SUM(p.sale_price * s.qty) AS total_saleing_price";
-  $sql .= " FROM sales s";
-  $sql .= " LEFT JOIN products p ON s.product_id = p.id";
-  $sql .= " WHERE DATE_FORMAT(s.date, '%Y-%m' ) = '{$year}-{$month}'";
-  $sql .= " GROUP BY DATE_FORMAT( s.date,  '%e' ),s.product_id";
-  return find_by_sql($sql);
-}
-/*--------------------------------------------------------------*/
-/* Function for Generate Monthly sales report
-/*--------------------------------------------------------------*/
-function  monthlySales($year){
-  global $db;
-  $sql  = "SELECT s.qty,";
-  $sql .= " DATE_FORMAT(s.date, '%Y-%m-%e') AS date,p.name,";
-  $sql .= "SUM(p.sale_price * s.qty) AS total_saleing_price";
-  $sql .= " FROM sales s";
-  $sql .= " LEFT JOIN products p ON s.product_id = p.id";
-  $sql .= " WHERE DATE_FORMAT(s.date, '%Y' ) = '{$year}'";
-  $sql .= " GROUP BY DATE_FORMAT( s.date,  '%c' ),s.product_id";
-  $sql .= " ORDER BY date_format(s.date, '%c' ) ASC";
-  return find_by_sql($sql);
+
+function find_product_by_dates($start_date,$end_date){
+    global $db;
+    $start_date  = date("Y-m-d", strtotime($start_date));
+    $end_date    = date("Y-m-d", strtotime($end_date));
+
+    $sql  = "SELECT p.id,p.name,p.quantity,p.buy_price,p.sale_price,p.media_id,p.date,c.name";
+    $sql .= " AS categorie,m.file_name AS image";
+    $sql .= " FROM products p";
+    $sql .= " LEFT JOIN categories c ON c.id = p.categorie_id";
+    $sql .= " LEFT JOIN media m ON m.id = p.media_id";
+    $sql .= " WHERE p.date BETWEEN '{$start_date}' AND '{$end_date}'";
+    $sql .= " ORDER BY p.id ASC";
+
+    return $db->query($sql);
 }
 
 ?>

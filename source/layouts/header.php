@@ -1,3 +1,4 @@
+<?php $user = current_user(); ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -27,19 +28,16 @@
 
         <ul class="nav-links">
 
-            <!--?php if ($user['user_level'] === '1'): ?>
-                 admin menu -->
+            <?php if ($user['user_level'] === '1'): ?>
                 <?php include_once("admin_menu.php"); ?>
-            <!--
-            ?php elseif ($user['user_level'] === '2'): ?>
-                !-- Special user
-                ?php include_once('layouts/admin_menu.php'); ?>
 
-            ?php elseif ($user['user_level'] === '3'): ?>
-                !-- User menu
-                ?php include_once('layouts/admin_menu.php'); ?-->
+            <?php elseif ($user['user_level'] === '2'): ?>
+                <?php include_once('layouts/admin_menu.php'); ?>
 
-            <!--?php endif; ?-->
+            <?php elseif ($user['user_level'] === '3'): ?>
+                <?php include_once('layouts/admin_menu.php'); ?>
+
+            <?php endif; ?>
         </ul>
         <ul class="footer-links">
             <li class="mode">
@@ -54,10 +52,10 @@
 
             <li>
                 <br>
-                <footer class="login__copyright2">
-
-                    <p>Copyright 2023 &copy; M&MTeam</p>
-                </footer>
+                <a href="#">
+                    <i class="uil uil-copyright"></i>
+                    <span class="link-name">Copyright 2023<br>M&MTeam<span class="link-name">
+                </a>
             </li>
         </ul>
     </div>
@@ -73,14 +71,6 @@
             </div>
             <div class="menu_login">
                 <ul>
-                    <li>
-                        <i class="uil uil-user"></i>
-                        <a href="profile.php?id=<?php echo (int)$user['id'];?>">My Profile</a>
-                    </li>
-                    <li>
-                        <i class="uil uil-setting"></i>
-                        <a href="edit_account.php" title="edit account">Settings</a>
-                    </li>
                     <li>
                         <i class="uil uil-signout"></i>
                         <a href="logout.php">Logout</a>

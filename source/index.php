@@ -34,7 +34,7 @@ if($session->isUserLoggedIn(true)) { redirect('home.php', false);}
 
         <button  type="submit" class="login__submit" >Login</button>
     </form>
-    <p class="login__copyright2">Copyright 2023 &copy; M&MTeam</p>
+    <p class="login__copyright">Copyright 2023 &copy; M&MTeam</p>
 </div>
 
 

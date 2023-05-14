@@ -49,16 +49,16 @@ if(isset($_POST['add_sale'])){
     <form method="post" action="add_sale.php" class="px-4 py-3 mb-8 bg-form rounded-lg shadow-md">
 
         <br>
-        <input type="text" class="block w-100 mt-1 text-sm border-gray text-gray form-input" name="s_id" placeholder="Product ID">
+        <input type="number" class="block w-100 mt-1 text-sm border-gray text-gray form-input" name="s_id" placeholder="Product ID">
         <br>
         <br>
-        <input type="text" class="block w-100 mt-1 text-sm border-gray text-gray form-input" name="quantity" placeholder="Quantity">
+        <input type="number" class="block w-100 mt-1 text-sm border-gray text-gray form-input" name="quantity" placeholder="Quantity">
         <br>
         <br>
-        <input type="text" class="block w-100 mt-1 text-sm border-gray text-gray form-input" name="price" placeholder="Price per unit">
+        <input type="number" class="block w-100 mt-1 text-sm border-gray text-gray form-input" name="price" placeholder="Price per unit">
         <br>
         <br>
-        <input type="text" class="block w-100 mt-1 text-sm border-gray text-gray form-input" name="total" placeholder="Total">
+        <input type="number" class="block w-100 mt-1 text-sm border-gray text-gray form-input" name="total" placeholder="Total">
         <br>
         <br>
         <input type="text" class="block w-100 mt-1 text-sm border-gray text-gray form-input" name="date" placeholder="Date(dd-mm-yyyy)">
