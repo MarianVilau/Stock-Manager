@@ -51,10 +51,13 @@
                     <span class="switch"></span>
                 </div>
             </li>
+
             <li>
-                <a href="#">
-                <span class="link_name">Copyright 2023 &copy; M&MTeam</span>
-                </a>
+                <br>
+                <footer class="login__copyright2">
+
+                    <p>Copyright 2023 &copy; M&MTeam</p>
+                </footer>
             </li>
         </ul>
     </div>

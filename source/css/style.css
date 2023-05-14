@@ -729,9 +729,9 @@ a:-webkit-any-link {
     padding: 0.812rem;
     font-size: 0.875rem !important;
     text-align: center;
-    border-top: 1px solid var(--text-color);
     color: var(--text-color);
     display: block;
+    margin-bottom: -2.5rem;
 }
 .element {
     position: absolute;

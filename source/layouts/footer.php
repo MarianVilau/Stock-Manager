@@ -1,8 +1,4 @@
 <br>
-<footer class="login__copyright2">
-    <br>
-    <p>Copyright 2023 &copy; M&MTeam</p>
-</footer>
 
 </div>
 
