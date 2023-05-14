@@ -118,11 +118,6 @@ $recent_sales = find_recent_sale_added('10');
         </div>
     </div>
 
-    <footer>
-        <br>
 
-        <p class="login__copyright2">Copyright 2023 &copy; Marian&MihaelaTeam</p>
-
-    </footer>
 
 <?php require_once('layouts/footer.php') ?>

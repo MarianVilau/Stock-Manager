@@ -67,15 +67,15 @@
                 <ul>
                     <li>
                         <i class="uil uil-user"></i>
-                        <a href="#">My Profile</a>
+                        <a href="profile.php?id=<?php echo (int)$user['id'];?>">My Profile</a>
                     </li>
                     <li>
                         <i class="uil uil-setting"></i>
-                        <a href="#">Settings</a>
+                        <a href="edit_account.php" title="edit account">Settings</a>
                     </li>
                     <li>
                         <i class="uil uil-signout"></i>
-                        <a href="..\old files\login.html">Logout</a>
+                        <a href="logout.php">Logout</a>
                     </li>
                 </ul>
             </div>
