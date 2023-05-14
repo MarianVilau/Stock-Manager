@@ -1,5 +1,4 @@
-/* ===== Google Font Import - Poppins ===== */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -703,6 +702,7 @@ nav.close ~ .content .top{
     transition:0.5s;
 
 }
+
 .action .menu_login ul li:hover a{
     color:var(--item-color);
 }
@@ -718,16 +718,17 @@ nav.close ~ .content .top{
     }
 }
 
-
-/*---------------footer admin--------- */
-.login__copyright2 {
-
-    display: block;
-    margin-top: 3rem;
-    text-align: center;
-    color: rgba(255, 255, 255, 0.75);
-    font-size: 0.75rem;
+a:-webkit-any-link {
+    color: #000000;
+    cursor: pointer;
     text-decoration: none;
-    position: relative;
-    z-index: 1;
+}
+
+.login__copyright2 {
+    padding: 0.812rem;
+    font-size: 0.875rem !important;
+    text-align: center;
+    border-top: 1px solid var(--text-color);
+    color: var(--text-color);
+    display: block;
 }

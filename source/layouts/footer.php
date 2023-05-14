@@ -1,10 +1,12 @@
 
-<footer>
+<footer class="login__copyright2">
     <br>
-    <p class="login__copyright2">Copyright 2023 &copy; Marian&MihaelaTeam</p>
+    <p>Copyright 2023 &copy; M&MTeam</p>
 </footer>
 
 </div>
+
+
 
 <script src="js/script_template.js"></script>
 <script type="text/javascript" src="js/functions.js"></script>

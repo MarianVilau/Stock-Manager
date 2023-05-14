@@ -48,7 +48,7 @@ function delete_by_id($table,$id)
     $sql .= " WHERE id=". $db->escape($id);
     $sql .= " LIMIT 1";
     $db->query($sql);
-    return ($db->affected_rows() === 1) ? true : false;
+    return $db->affected_rows() === 1;
    }
 }
 /*--------------------------------------------------------------*/

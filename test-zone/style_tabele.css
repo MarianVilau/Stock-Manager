@@ -364,17 +364,13 @@
     grid-template-columns:repeat(9, minmax(0, 1fr))
 }
 
-.login__copyright2 {
 
-    display: block;
-    padding: 1rem;
-    border-top:1px solid var(--text-color);
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+/*---------------footer admin--------- */
+.login__copyright2 {
+    padding: 0.812rem;
+    font-size: 0.875rem !important;
     text-align: center;
+    border-top: 1px solid var(--text-color);
     color: var(--text-color);
-    font-size: .75rem;
-    text-decoration: none;
-    position: relative;
-    z-index: 1;
+    display: block;
 }

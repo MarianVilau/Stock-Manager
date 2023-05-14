@@ -14,8 +14,10 @@ $c_user = count_by_id('users');
 
 <br>
 <div class="dash-content">
-    <h1 class="text">Welcome User<br>Inventory Management System</h1>
-    <p class="text">Browes around to find out the pages that you can access!</p>
+    <div class="title">
+        <h1 class="text">Welcome User<br>Stock Management System
+        <br>Browes around to find out the pages that you can access!</h1>
+    </div>
 </div>
 
 <div class="dash-content">

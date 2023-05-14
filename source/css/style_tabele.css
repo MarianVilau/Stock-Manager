@@ -352,6 +352,30 @@
     color: rgba(222, 247, 236, var(--text-opacity));
 }
 
+.text-red-700 {
+    --text-opacity: 1;
+    color: #6c0404;
+}
+
+.bg-red-100 {
+    --bg-opacity: 1;
+    background-color: #f7dede;
+}
+
+.rounded-full {
+    border-radius: 9999px;
+}
+
+.dark\:bg-red-700 {
+    --bg-opacity: 1;
+    background-color: #bd1111;
+}
+
+.dark\:text-red-100 {
+    --text-opacity: 1;
+    color: #f7dede;
+}
+
 .w-5 {
     width: 1.25rem;
 }
