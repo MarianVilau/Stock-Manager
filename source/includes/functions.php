@@ -116,6 +116,4 @@ function randString($length = 5)
    $str .= $cha[mt_rand(0,strlen($cha))];
   return $str;
 }
-
-
 ?>
