@@ -79,8 +79,8 @@ if(isset($_POST['add_product'])){
     <br>
     <div class="more-align">
         <input type="number" class="block w-30 mt-1 text-sm border-gray text-gray form-input" name="product-quantity" placeholder="Product Quantity">
-        <input type="number" class="block w-30 mt-1 text-sm border-gray text-gray form-input" name="buying-price" placeholder="Buying Price">
-        <input type="number" class="block w-30 mt-1 text-sm border-gray text-gray form-input" name="saleing-price" placeholder="Selling Price">
+        <input type="text" class="block w-30 mt-1 text-sm border-gray text-gray form-input" name="buying-price" placeholder="Buying Price">
+        <input type="text" class="block w-30 mt-1 text-sm border-gray text-gray form-input" name="saleing-price" placeholder="Selling Price">
     </div>
 
     <br>

@@ -33,7 +33,7 @@ Acestea sunt doar câteva dintre aspectele de design responsiv acoperite în ace
 
 ---
 
-# Stylesheet pentru formulare - style_from.css
+# Stylesheet pentru formulare - style_form.css
 
 ---
 
